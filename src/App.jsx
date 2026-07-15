@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>Portfolio Template</h1>
+      <h1 className="text-3xl font-bold">Portfolio Template</h1>
     </div>
   )
 }
