@@ -1,7 +1,9 @@
+import { Outlet } from 'react-router-dom'
+
 function App() {
   return (
     <div>
-      <h1 className="text-3xl font-bold">Portfolio Template</h1>
+      <Outlet />
     </div>
   )
 }
