@@ -1,0 +1,158 @@
+{
+    "about": { 
+        "name": "Francisco Avila", 
+        "title": "Lead Software Engineer", 
+        "tagline": "", 
+        "bio": "USMC Infantry Veteran and experienced software engineer with a passion for building scalable systems and applications.", 
+        "photoUrl": "", 
+        "location": "Fresno, CA" 
+    },
+    "socials": { 
+        "github": "https://github.com/fravila08", 
+        "linkedin": "", 
+        "email": "francisco@codeplatoon.org", 
+        "website": "https://github.com/fravila08/portfolio" 
+    },
+    "skills": [
+        { "category": "Languages", "items": ["Python", "JavaScript", "TypeScript", "C#"] },
+        { "category": "Frameworks", "items": ["React", "Django", "ASP.NET", "ReactNative"] },
+        { "category": "Tools", "items": ["Git", "Docker", "AWS"] },
+        { "category": "Databases", "items": ["PostgreSQL", "MongoDB", "MySQL"] },
+        { "category": "Other", "items": ["Linux", "CI/CD", "Kubernetes", "Supabase", "Vercel", "Postman"] }
+    ],
+    "experience": [
+        { 
+            "role": "Lead Software Engineer", 
+            "org": "Code Platoon", 
+            "dates": "2025 - Present", 
+            "bullets": [
+                "Led a team of software engineers to develop scalable web applications.",
+                "Implemented CI/CD pipelines to streamline deployment processes.",
+                "Collaborated with cross-functional teams to define project requirements."
+            ] 
+        },
+        {
+            "role":"Software Engineer",
+            "org":"Code Platoon",
+            "dates":"2022 - 2025",
+            "bullets": [
+                "Developed web applications using modern frameworks and technologies.",
+                "Participated in code reviews and contributed to team knowledge sharing.",
+                "Assisted in the design and implementation of scalable backend systems."
+            ]
+        },
+        {
+            "role":"Combat Instructor",
+            "org":"USMC",
+            "dates":"2015 - 2022",
+            "bullets": [
+                "Trained and mentored Marines in combat tactics and operations.",
+                "Developed and implemented training programs to enhance combat readiness.",
+                "Led teams in high-pressure environments to achieve mission objectives."
+            ]
+        }
+    ],
+    "education": [
+        { 
+            "school": "Code Platoon", 
+            "program": "Full Stack Web Development", 
+            "dates": "2022 - 2022", 
+            "description": "Completed an intensive 15 week program focused on full stack web development, covering both frontend and backend technologies." 
+        }
+    ],
+    "projects": [
+        { 
+            "title": "Pokemon Informant", 
+            "description": "The Pokemon Informant is a web application that provides detailed information about Pokemon by leveraging the PokeAPI to fetch and display data about various Pokemon.", 
+            "stack": [
+                "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress", "Docker"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        },
+        { 
+            "title": "The Video Store", 
+            "description": "The Video Store is a OOP Python terminal program that allows users to manage a video rental store, including adding, updating, and deleting video records, as well as tracking rentals and returns.", 
+            "stack": [
+                "Python", "Rich", "Pytest", "Docker"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        },
+        { 
+            "title": "Rick & Morty Informant", 
+            "description": "The Rick & Morty Informant is a web application that provides detailed information about characters, episodes, and locations from the Rick & Morty TV show.", 
+            "stack": [
+                "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        },
+        { 
+            "title": "E-Commerce API", 
+            "description": "The E-Commerce API is a backend service that provides endpoints for managing products, orders, and users in an e-commerce application.", 
+            "stack": [
+                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker", "Gunicorn", "Redis", "Django Simple JWT", "Django Test Case"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        }, 
+        { 
+            "title": "School Manager API", 
+            "description": "The School Manager API is a backend service that provides endpoints for managing students, teachers, classes, and other school-related data in a school management application.", 
+            "stack": [
+                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker", "Gunicorn", "Redis", "DRF Token Authentication", "Django Test Case"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        },
+        { 
+            "title": "Personal Project", 
+            "description": "The Personal Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's.", 
+            "stack": [
+                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker Compose", "Gunicorn", "Redis", "DRF Token Authentication", "Django Test Case", "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress", "TLDraw", "Claude Code", "drawSQL", "Nginx"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        },
+        { 
+            "title": "Agentic Coding Project", 
+            "description": "The Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
+            "stack": [
+                "Supabase", "Vercel", "PostgREST", "PostgreSQL", "Edge Functions", "Vite", "React", "TLDraw", "Claude Code", "drawSQL"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        },
+                { 
+            "title": "Group Project", 
+            "description": "The Group Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's built through collaboration with a 5-10 person team that I participated in.", 
+            "stack": [
+                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker Compose", "Gunicorn", "Redis", "DRF Token Authentication", "Django Test Case", "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress", "TLDraw", "Claude Code", "drawSQL", "Nginx", "CI/CD", "Github", "Git"
+            ], 
+            "repoUrl": "", 
+            "liveUrl": "", 
+            "imageUrl": "", 
+            "featured": false 
+        }
+    ],
+  "contact": { 
+        "headline": "", 
+        "email": "", 
+        "resumeUrl": "" 
+    }
+}
