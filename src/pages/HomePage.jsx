@@ -3,6 +3,7 @@ import SkillsSection from '../components/SkillsSection.jsx'
 import ExperienceSection from '../components/ExperienceSection.jsx'
 import EducationSection from '../components/EducationSection.jsx'
 import ProjectsSection from '../components/ProjectsSection.jsx'
+import ContactSection from '../components/ContactSection.jsx'
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <ExperienceSection />
       <EducationSection />
       <ProjectsSection />
+      <ContactSection />
     </div>
   )
 }
