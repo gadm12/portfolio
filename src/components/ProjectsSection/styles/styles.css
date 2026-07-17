@@ -1,0 +1,70 @@
+/*
+ * Component-scoped CSS for ProjectsSection, relocated from the global
+ * src/index.css since these rules are used exclusively by
+ * subcomponents/ProjectCard.jsx (verified: no other component references
+ * them). Imported directly by ProjectCard.jsx.
+ *
+ * (.reticle / .animate-hero-rise remain global in src/index.css because
+ * they're also shared by AboutSection and NotFoundPage.)
+ */
+
+/* Directional slide for the project card when switching via prev/next/list. */
+@keyframes card-slide-next {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes card-slide-prev {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-card-slide-next {
+  animation: card-slide-next 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-card-slide-prev {
+  animation: card-slide-prev 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-card-slide-next,
+  .animate-card-slide-prev {
+    animation: none;
+  }
+}
+
+/* Themed scrollbar for the card's internally-scrolling description/stack block. */
+.themed-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+.themed-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.themed-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.themed-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-line);
+  border-radius: 3px;
+}
+
+.themed-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-muted);
+}

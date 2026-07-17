@@ -1,0 +1,11 @@
+/*
+ * AboutSection has no bespoke CSS today — every visual style is a Tailwind
+ * utility class (extracted into ./tailwindStyles.jsx), plus the two global classes
+ * `.reticle` and `.animate-hero-rise` defined in src/index.css and shared
+ * with other components (e.g. ProjectCard), so they stay global rather than
+ * being duplicated here.
+ *
+ * This file is imported by AboutSection.jsx and reserved for any future
+ * component-scoped CSS (custom keyframes, pseudo-elements, etc.) specific
+ * to this component only.
+ */

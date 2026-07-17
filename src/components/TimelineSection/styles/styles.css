@@ -1,0 +1,7 @@
+/*
+ * TimelineSection has no bespoke CSS today — every visual style is a
+ * Tailwind utility class, extracted into ./tailwindStyles.jsx.
+ *
+ * This file is imported by TimelineSection.jsx and reserved for any future
+ * component-scoped CSS specific to this component only.
+ */
