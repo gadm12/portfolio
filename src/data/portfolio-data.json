@@ -1,187 +1,441 @@
 {
-    "about": { 
-        "name": "Francisco Avila", 
-        "title": "Lead Software Engineer", 
-        "tagline": "", 
-        "bio": "USMC Infantry Veteran and experienced software engineer with a passion for building scalable systems and applications.", 
-        "photoUrl": "./assets/headshot.png", 
-        "location": "Fresno, CA" 
+  "about": {
+    "name": "Mohamed Gad",
+    "title": "Software Engineer",
+    "tagline": "",
+    "bio": "U.S. Army veteran and software engineer with 11 years of leadership and technical systems experience. I enjoy building reliable backend applications, APIs, automated tests, and CI/CD workflows.",
+    "photoUrl": "./assets/headshot.png",
+    "location": "Crestview, FL"
+  },
+  "socials": {
+    "github": "https://github.com/gadm12",
+    "linkedin": "https://www.linkedin.com/in/gadm12/",
+    "email": "gadm5336@gmail.com"
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Languages",
+      "icon": "python"
     },
-    "socials": { 
-        "github": "https://github.com/fravila08", 
-        "linkedin": "https://www.linkedin.com/in/francisco-avila-1837463b6", 
-        "email": "francisco@codeplatoon.org"
+    {
+      "name": "JavaScript",
+      "category": "Languages",
+      "icon": "javascript"
     },
-    "skills": [
-        { "name": "Python", "category": "Languages", "icon": "python" },
-        { "name": "JavaScript", "category": "Languages", "icon": "javascript" },
-        { "name": "React", "category": "Frontend", "icon": "react" },
-        { "name": "Vite", "category": "Frontend", "icon": "vite" },
-        { "name": "Tailwind CSS", "category": "Frontend", "icon": "tailwind" },
-        { "name": "React Router", "category": "Frontend", "icon": "reactrouter" },
-        { "name": "Django", "category": "Backend", "icon": "django" },
-        { "name": "Django REST Framework", "category": "Backend", "icon": "drf" },
-        { "name": "PostgreSQL", "category": "Databases", "icon": "postgresql" },
-        { "name": "Redis", "category": "Databases", "icon": "redis" },
-        { "name": "Docker", "category": "DevOps", "icon": "docker" },
-        { "name": "GitHub Actions", "category": "DevOps", "icon": "githubactions" },
-        { "name": "AWS", "category": "DevOps", "icon": "aws" },
-        { "name": "Nginx", "category": "DevOps", "icon": "nginx" },
-        { "name": "Linux", "category": "DevOps", "icon": "linux" },
-        { "name": "Supabase", "category": "BaaS", "icon": "supabase" },
-        { "name": "Vercel", "category": "PaaS", "icon": "vercel" },
-        { "name": "Cypress", "category": "Testing", "icon": "cypress" },
-        { "name": "Pytest", "category": "Testing", "icon": "pytest" },
-        { "name": "Jest", "category": "Testing", "icon": "jest" },
-        { "name": "Git", "category": "Tools", "icon": "git" },
-        { "name": "Axios", "category": "Tools", "icon": "axios" },
-        { "name": "Stripe", "category": "Tools", "icon": "stripe" },
-        { "name": "Claude Code", "category": "AI", "icon": "claudecode" }, 
-        { "name": "Gemini", "category": "AI", "icon": "gemini" }, 
-        { "name": "BootStrap", "category": "Frontend", "icon": "bootstrap" },
-        { "name": "HTML", "category": "Frontend", "icon": "html" },
-        { "name": "CSS", "category": "Frontend", "icon": "css" },
-        { "name":"PyTorch", "category":"AI", "icon":"pytorch"},
-        { "name":"Scikit-learn", "category":"AI", "icon":"scikitlearn"},
-        { "name":"Pandas", "category":"Data Analysis", "icon":"pandas"},
-        { "name":"NumPy", "category":"Data Analysis", "icon":"numpy"},
-        {"name":"Github Pages", "category":"PaaS", "icon":"githubpages"},
-        {"name":"Postman", "category":"Software", "icon":"postman"},
-        {"name":"Figma", "category":"Software", "icon":"figma"},
-        { "name": "Github", "category": "Tools", "icon": "github" }
-    ],
-    "experience": [
-        { 
-            "role": "Lead Software Engineer", 
-            "org": "Code Platoon", 
-            "dates": "2025 - Present", 
-            "bullets": [
-                "Led a team of software engineers to develop scalable web applications.",
-                "Implemented CI/CD pipelines to streamline deployment processes.",
-                "Collaborated with cross-functional teams to define project requirements."
-            ] 
-        },
-        {
-            "role":"Software Engineer",
-            "org":"Code Platoon",
-            "dates":"2022 - 2025",
-            "bullets": [
-                "Developed web applications using modern frameworks and technologies.",
-                "Participated in code reviews and contributed to team knowledge sharing.",
-                "Assisted in the design and implementation of scalable backend systems."
-            ]
-        },
-        {
-            "role":"Combat Instructor",
-            "org":"USMC",
-            "dates":"2015 - 2022",
-            "bullets": [
-                "Trained and mentored Marines in combat tactics and operations.",
-                "Developed and implemented training programs to enhance combat readiness.",
-                "Led teams in high-pressure environments to achieve mission objectives."
-            ]
-        }
-    ],
-    "education": [
-        { 
-            "school": "Code Platoon", 
-            "program": "Full Stack Web Development", 
-            "dates": "2022 - 2022", 
-            "description": "Completed an intensive 15 week program focused on full stack web development, covering both frontend and backend technologies." 
-        }
-    ],
-    "projects": [
-        { 
-            "title": "The Video Store", 
-            "description": "The Video Store is a OOP Python terminal program that allows users to manage a video rental store, including adding, updating, and deleting video records, as well as tracking rentals and returns.", 
-            "stack": [
-                "Python", "Rich", "Pytest", "Docker"
-            ], 
-            "repoUrl": "", 
-            "liveUrl": "", 
-            "imageUrl": "", 
-            "featured": false 
-        },
-        { 
-            "title": "Pokemon Informant", 
-            "description": "The Pokemon Informant is a web application that provides detailed information about Pokemon by leveraging the PokeAPI to fetch and display data about various Pokemon.", 
-            "stack": [
-                "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress", "Docker"
-            ], 
-            "repoUrl": "", 
-            "liveUrl": "", 
-            "imageUrl": "", 
-            "featured": false 
-        },
-        { 
-            "title": "Rick & Morty Informant", 
-            "description": "The Rick & Morty Informant is a web application that provides detailed information about characters, episodes, and locations from the Rick & Morty TV show.", 
-            "stack": [
-                "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress"
-            ], 
-            "repoUrl": "", 
-            "liveUrl": "", 
-            "imageUrl": "", 
-            "featured": false 
-        },
-        { 
-            "title": "School Manager API", 
-            "description": "The School Manager API is a backend service that provides endpoints for managing students, teachers, classes, and other school-related data in a school management application.", 
-            "stack": [
-                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker", "Gunicorn", "Redis", "DRF Token Authentication", "Django Test Case"
-            ], 
-            "repoUrl": "", 
-            "liveUrl": "", 
-            "imageUrl": "", 
-            "featured": false 
-        },
-        { 
-            "title": "E-Commerce API", 
-            "description": "The E-Commerce API is a backend service that provides endpoints for managing products, orders, and users in an e-commerce application.", 
-            "stack": [
-                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker", "Gunicorn", "Redis", "Django Simple JWT", "Django Test Case"
-            ],
-            "repoUrl": "",
-            "liveUrl": "",
-            "imageUrl": "",
-            "featured": true
-        },
-        { 
-            "title": "Personal Project", 
-            "description": "The Personal Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's.", 
-            "stack": [
-                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker Compose", "Gunicorn", "Redis", "DRF Token Authentication", "Django Test Case", "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress", "TLDraw", "Claude Code", "drawSQL", "Nginx"
-            ], 
-            "repoUrl": "", 
-            "liveUrl": "", 
-            "imageUrl": "", 
-            "featured": false 
-        },
-        { 
-            "title": "Agentic Coding Project", 
-            "description": "The Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
-            "stack": [
-                "Supabase", "Vercel", "PostgREST", "PostgreSQL", "Edge Functions", "Vite", "React", "TLDraw", "Claude Code", "drawSQL"
-            ],
-            "repoUrl": "",
-            "liveUrl": "",
-            "imageUrl": "",
-            "featured": true
-        },
-                { 
-            "title": "Group Project", 
-            "description": "The Group Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's built through collaboration with a 5-10 person team that I participated in.", 
-            "stack": [
-                "Python", "Django", "Django REST Framework", "Django CORS Headers", "Psycopg3", "PostgreSQL", "Pytest", "Docker Compose", "Gunicorn", "Redis", "DRF Token Authentication", "Django Test Case", "Vite", "React", "JavaScript", "CSS", "Tailwind", "React-Router-DOM", "Axios", "Cypress", "TLDraw", "Claude Code", "drawSQL", "Nginx", "CI/CD", "Github", "Git"
-            ], 
-            "repoUrl": "", 
-            "liveUrl": "", 
-            "imageUrl": "", 
-            "featured": false 
-        }
-    ],
-  "contact": { 
-        "headline": "Let's build something together!", 
-        "email": "francisco@example.com"
+    {
+      "name": "React",
+      "category": "Frontend",
+      "icon": "react"
+    },
+    {
+      "name": "Vite",
+      "category": "Frontend",
+      "icon": "vite"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "icon": "tailwind"
+    },
+    {
+      "name": "React Router",
+      "category": "Frontend",
+      "icon": "reactrouter"
+    },
+    {
+      "name": "Django",
+      "category": "Backend",
+      "icon": "django"
+    },
+    {
+      "name": "Django REST Framework",
+      "category": "Backend",
+      "icon": "drf"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Databases",
+      "icon": "postgresql"
+    },
+    {
+      "name": "Redis",
+      "category": "Databases",
+      "icon": "redis"
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "icon": "docker"
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "DevOps",
+      "icon": "githubactions"
+    },
+    { "name": "AWS", "category": "DevOps", "icon": "aws" },
+    {
+      "name": "Nginx",
+      "category": "DevOps",
+      "icon": "nginx"
+    },
+    {
+      "name": "Linux",
+      "category": "DevOps",
+      "icon": "linux"
+    },
+    {
+      "name": "Supabase",
+      "category": "BaaS",
+      "icon": "supabase"
+    },
+    {
+      "name": "Vercel",
+      "category": "PaaS",
+      "icon": "vercel"
+    },
+    {
+      "name": "Cypress",
+      "category": "Testing",
+      "icon": "cypress"
+    },
+    {
+      "name": "Pytest",
+      "category": "Testing",
+      "icon": "pytest"
+    },
+    {
+      "name": "Jest",
+      "category": "Testing",
+      "icon": "jest"
+    },
+    { "name": "Git", "category": "Tools", "icon": "git" },
+    {
+      "name": "Axios",
+      "category": "Tools",
+      "icon": "axios"
+    },
+    {
+      "name": "Stripe",
+      "category": "Tools",
+      "icon": "stripe"
+    },
+    {
+      "name": "Claude Code",
+      "category": "AI",
+      "icon": "claudecode"
+    },
+    {
+      "name": "Gemini",
+      "category": "AI",
+      "icon": "gemini"
+    },
+    {
+      "name": "BootStrap",
+      "category": "Frontend",
+      "icon": "bootstrap"
+    },
+    {
+      "name": "HTML",
+      "category": "Frontend",
+      "icon": "html"
+    },
+    {
+      "name": "CSS",
+      "category": "Frontend",
+      "icon": "css"
+    },
+    {
+      "name": "PyTorch",
+      "category": "AI",
+      "icon": "pytorch"
+    },
+    {
+      "name": "Scikit-learn",
+      "category": "AI",
+      "icon": "scikitlearn"
+    },
+    {
+      "name": "Pandas",
+      "category": "Data Analysis",
+      "icon": "pandas"
+    },
+    {
+      "name": "NumPy",
+      "category": "Data Analysis",
+      "icon": "numpy"
+    },
+    {
+      "name": "Github Pages",
+      "category": "PaaS",
+      "icon": "githubpages"
+    },
+    {
+      "name": "Postman",
+      "category": "Software",
+      "icon": "postman"
+    },
+    {
+      "name": "Figma",
+      "category": "Software",
+      "icon": "figma"
+    },
+    {
+      "name": "Github",
+      "category": "Tools",
+      "icon": "github"
     }
+  ],
+  "experience": [
+    {
+      "role": "Replenishment Specialist",
+      "org": "Publix",
+      "dates": "March 2023 - July 2026",
+      "bullets": [
+        "Utilized handheld inventory management systems, including ChainTrack and Publix Pro, to maintain inventory accuracy, track product movement, and support daily operational workflows.",
+        "Worked in a fast-paced environment while completing a Bachelor's degree in Information Technology and Full-Stack Software Engineering training through Code Platoon."
+      ]
+    },
+    {
+      "role": "Battalion Operations & Training Systems Supervisor",
+      "org": "United States Army | Fort Drum, NY",
+      "dates": "August 2018 - August 2021",
+      "bullets": [
+        "Served as the Digital Training Management System (DTMS) Administrator, managing training records and readiness data for 850+ personnel, training 12 company DTMS administrators, reducing reporting discrepancies by 51%, and increasing battalion compliance metrics by 31%.",
+        "Served as Battle NCO, coordinating operational reporting, maintaining mission tracking information, and ensuring continuity of digital communications between shifts.",
+        "Served as Battalion Digital Master Gunner, providing system configuration, technical troubleshooting, user support, and operator training for CPOF and other digital mission command systems."
+      ]
+    },
+    {
+      "role": "Company Operations & Training Systems Supervisor",
+      "org": "United States Army | Fort Hood, TX",
+      "dates": "July 2015 - July 2018",
+      "bullets": [
+        "Served as Deployment Systems Coordinator using TCAIMS II and ALPS to manage deployment planning.",
+        "Validated equipment records, transportation requirements, aircraft load plans, and deployment documentation.",
+        "Supported deployment operations for Hurricane Harvey relief efforts and overseas deployment."
+      ]
+    },
+    {
+      "role": "Company CBRN Supervisor / Operations Room Supervisor",
+      "org": "United States Army | Dongducheon, South Korea",
+      "dates": "December 2014 - June 2015",
+      "bullets": [
+        "Coordinated operational information and personnel tracking during the transition of 200 departing and 330 incoming Soldiers.",
+        "Managed weekly company training meetings, consolidating training information and preparing briefing materials for company leadership.",
+        "Coordinated resources, schedules, and operational requirements to support company-level training and readiness."
+      ]
+    },
+    {
+      "role": "Team Leader",
+      "org": "United States Army | Fort Campbell, KY",
+      "dates": "August 2011 - December 2014",
+      "bullets": [
+        "Supervised, trained, and mentored a five-person team while maintaining personnel accountability and coordinating daily operational requirements.",
+        "Served as Mass Casualty Collection Point incident commander, training and validating more than 50 Soldiers in support of an Army North and Department of Homeland Security mission.",
+        "Developed team training and standardized procedures to improve readiness and execution in high-pressure operational environments."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Code Platoon",
+      "program": "Full-Stack Software Engineering",
+      "dates": "2026",
+      "description": "Intensive 15-week program focused on full-stack software engineering, including Python, Django, JavaScript, React, PostgreSQL, Docker, REST APIs, testing, and modern development practices."
+    },
+    {
+      "school": "University of Phoenix",
+      "program": "Bachelor of Science in Information Technology",
+      "dates": "2022 - 2026",
+      "description": "Bachelor of Science in Information Technology. GPA: 3.58."
+    }
+  ],
+  "projects": [
+    {
+      "title": "The Video Store",
+      "description": "The Video Store is a OOP Python terminal program that allows users to manage a video rental store, including adding, updating, and deleting video records, as well as tracking rentals and returns.",
+      "stack": ["Python", "Rich", "Pytest", "Docker"],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjOYy80-B_QFrZsq-3OSsM32ELOVwKmyPMDeQjqOtCg&s=10",
+      "featured": false
+    },
+    {
+      "title": "Pokemon Informant",
+      "description": "The Pokemon Informant is a web application that provides detailed information about Pokemon by leveraging the PokeAPI to fetch and display data about various Pokemon.",
+      "stack": [
+        "Vite",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Tailwind",
+        "React-Router-DOM",
+        "Axios",
+        "Cypress",
+        "Docker"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": false
+    },
+    {
+      "title": "Rick & Morty Informant",
+      "description": "The Rick & Morty Informant is a web application that provides detailed information about characters, episodes, and locations from the Rick & Morty TV show.",
+      "stack": [
+        "Vite",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Tailwind",
+        "React-Router-DOM",
+        "Axios",
+        "Cypress"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": false
+    },
+    {
+      "title": "School Manager API",
+      "description": "The School Manager API is a backend service that provides endpoints for managing students, teachers, classes, and other school-related data in a school management application.",
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "Django CORS Headers",
+        "Psycopg3",
+        "PostgreSQL",
+        "Pytest",
+        "Docker",
+        "Gunicorn",
+        "Redis",
+        "DRF Token Authentication",
+        "Django Test Case"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": false
+    },
+    {
+      "title": "E-Commerce API",
+      "description": "The E-Commerce API is a backend service that provides endpoints for managing products, orders, and users in an e-commerce application.",
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "Django CORS Headers",
+        "Psycopg3",
+        "PostgreSQL",
+        "Pytest",
+        "Docker",
+        "Gunicorn",
+        "Redis",
+        "Django Simple JWT",
+        "Django Test Case"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": true
+    },
+    {
+      "title": "Personal Project",
+      "description": "The Personal Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "Django CORS Headers",
+        "Psycopg3",
+        "PostgreSQL",
+        "Pytest",
+        "Docker Compose",
+        "Gunicorn",
+        "Redis",
+        "DRF Token Authentication",
+        "Django Test Case",
+        "Vite",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Tailwind",
+        "React-Router-DOM",
+        "Axios",
+        "Cypress",
+        "TLDraw",
+        "Claude Code",
+        "drawSQL",
+        "Nginx"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": false
+    },
+    {
+      "title": "Agentic Coding Project",
+      "description": "The Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
+      "stack": [
+        "Supabase",
+        "Vercel",
+        "PostgREST",
+        "PostgreSQL",
+        "Edge Functions",
+        "Vite",
+        "React",
+        "TLDraw",
+        "Claude Code",
+        "drawSQL"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": true
+    },
+    {
+      "title": "Group Project",
+      "description": "The Group Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's built through collaboration with a 5-10 person team that I participated in.",
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "Django CORS Headers",
+        "Psycopg3",
+        "PostgreSQL",
+        "Pytest",
+        "Docker Compose",
+        "Gunicorn",
+        "Redis",
+        "DRF Token Authentication",
+        "Django Test Case",
+        "Vite",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Tailwind",
+        "React-Router-DOM",
+        "Axios",
+        "Cypress",
+        "TLDraw",
+        "Claude Code",
+        "drawSQL",
+        "Nginx",
+        "CI/CD",
+        "Github",
+        "Git"
+      ],
+      "repoUrl": "",
+      "liveUrl": "",
+      "imageUrl": "",
+      "featured": false
+    }
+  ],
+  "contact": {
+    "headline": "Let's build something together!",
+    "email": "gadm5336@gmail.com"
+  }
 }
