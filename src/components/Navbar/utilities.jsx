@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
 /**
  * The list of links rendered by Navbar, both in the desktop row and the
@@ -7,13 +7,13 @@ import { useEffect, useState } from 'react'
  * helpers rather than in a shared/global location.
  */
 export const NAV_LINKS = [
-  { label: 'About', href: '/#about' },
-  { label: 'Skills', href: '/#skills' },
-  { label: 'Projects', href: '/#projects' },
-  { label: 'Experience', href: '/#experience' },
-  { label: 'Education', href: '/#education' },
-  { label: 'Contact', href: '/#contact' },
-]
+  { label: "About", href: "/#about" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Education", href: "/#education" },
+  { label: "Contact", href: "/#contact" },
+];
 
 /**
  * Converts a full name into its initials, e.g. "Francisco Avila" -> "FA".
@@ -21,10 +21,10 @@ export const NAV_LINKS = [
  */
 export function initials(name) {
   return name
-    .split(' ')
+    .split(" ")
     .map((part) => part[0])
-    .join('')
-    .toUpperCase()
+    .join("")
+    .toUpperCase();
 }
 
 /**
@@ -39,13 +39,14 @@ export function initials(name) {
  */
 export function useCloseOnEscape(isOpen, onClose) {
   useEffect(() => {
-    if (!isOpen) return
+    if (!isOpen) return;
     const onKeyDown = (event) => {
-      if (event.key === 'Escape') onClose()
-    }
-    document.addEventListener('keydown', onKeyDown)
-    return () => document.removeEventListener('keydown', onKeyDown)
-  }, [isOpen, onClose])
+      if (event.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () =>
+      document.removeEventListener("keydown", onKeyDown);
+  }, [isOpen, onClose]);
 }
 
 /**
@@ -82,37 +83,56 @@ export function useCloseOnEscape(isOpen, onClose) {
  */
 export function useScrollSpy(navLinks) {
   const [activeHref, setActiveHref] = useState(() => {
-    const currentHash = window.location.hash
-    const match = navLinks.find((link) => link.href === `/${currentHash}`)
-    return match?.href ?? null
-  })
+    const currentHash = window.location.hash;
+    const match = navLinks.find(
+      (link) => link.href === `/${currentHash}`,
+    );
+    return match?.href ?? null;
+  });
 
   useEffect(() => {
     const targets = navLinks
-      .map((link) => ({ link, element: document.querySelector(link.href.replace('/', '')) }))
-      .filter(({ element }) => element)
+      .map((link) => ({
+        link,
+        element: document.querySelector(
+          link.href.replace("/", ""),
+        ),
+      }))
+      .filter(({ element }) => element);
 
-    if (targets.length === 0) return
+    if (targets.length === 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const intersecting = entries.find((entry) => entry.isIntersecting)
-        if (!intersecting) return
+        const intersecting = entries.find(
+          (entry) => entry.isIntersecting,
+        );
+        if (!intersecting) return;
 
-        const target = targets.find(({ element }) => element === intersecting.target)
-        if (!target) return
+        const target = targets.find(
+          ({ element }) => element === intersecting.target,
+        );
+        if (!target) return;
 
-        setActiveHref(target.link.href)
-        if (window.location.pathname + window.location.hash !== target.link.href) {
-          window.history.replaceState(null, '', target.link.href)
+        setActiveHref(target.link.href);
+
+        const newHash = target.link.href.replace("/", ""); // "/#about" -> "#about"
+        if (window.location.hash !== newHash) {
+          window.history.replaceState(
+            null,
+            "",
+            window.location.pathname + newHash,
+          );
         }
       },
-      { rootMargin: '-45% 0px -45% 0px', threshold: 0 },
-    )
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 },
+    );
 
-    targets.forEach(({ element }) => observer.observe(element))
-    return () => observer.disconnect()
-  }, [navLinks])
+    targets.forEach(({ element }) =>
+      observer.observe(element),
+    );
+    return () => observer.disconnect();
+  }, [navLinks]);
 
-  return activeHref
+  return activeHref;
 }
