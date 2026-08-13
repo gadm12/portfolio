@@ -1,13 +1,12 @@
-import { createBrowserRouter } from 'react-router-dom'
-import App from './App.jsx'
-import HomePage from './pages/HomePage.jsx'
-import NotFoundPage from './pages/NotFoundPage.jsx'
-import { loadPortfolioData } from './utilities.jsx'
+import { createHashRouter } from "react-router-dom";
+import App from "./App.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
+import { loadPortfolioData } from "./utilities.jsx";
 
-
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     loader: loadPortfolioData,
     children: [
@@ -16,11 +15,11 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '*',
+        path: "*",
         element: <NotFoundPage />,
       },
     ],
   },
-])
+]);
 
-export default router
+export default router;
