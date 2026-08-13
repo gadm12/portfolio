@@ -1,6 +1,11 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { NAV_LINKS, initials, useCloseOnEscape, useScrollSpy } from './utilities.jsx'
+import { useState } from "react";
+import {
+  NAV_LINKS,
+  initials,
+  useCloseOnEscape,
+  useScrollSpy,
+} from "./utilities.jsx";
+
 import {
   navClass,
   navRowClass,
@@ -16,66 +21,106 @@ import {
   hamburgerBottomBarOpenClass,
   mobileMenuClass,
   mobileMenuItemClass,
-} from './styles/tailwindStyles.jsx'
-import './styles/styles.css'
+} from "./styles/tailwindStyles.jsx";
+
+import "./styles/styles.css";
 
 function Navbar({ portfolioData }) {
-  const { name } = portfolioData.data.about
-  const [isOpen, setIsOpen] = useState(false)
-  const activeHref = useScrollSpy(NAV_LINKS)
+  const { name } = portfolioData.data.about;
+  const [isOpen, setIsOpen] = useState(false);
+  const activeHref = useScrollSpy(NAV_LINKS);
 
-  useCloseOnEscape(isOpen, () => setIsOpen(false))
+  useCloseOnEscape(isOpen, () => setIsOpen(false));
 
   return (
     <nav className={navClass}>
       <div className={navRowClass}>
-        <Link to="/#about" className={brandClass} aria-label={name}>
+        {/* Logo / Initials */}
+        <a
+          href="#about"
+          className={brandClass}
+          aria-label={name}
+        >
           {initials(name)}
-        </Link>
+        </a>
 
+        {/* Desktop Navigation */}
         <ul className={desktopListClass}>
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <Link to={link.href} className={`${linkClass} ${link.href === activeHref ? activeLinkClass : ''}`}>
+              <a
+                href={link.href}
+                className={`${linkClass} ${
+                  link.href === activeHref
+                    ? activeLinkClass
+                    : ""
+                }`}
+              >
                 {link.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
 
+        {/* Mobile Menu Button */}
         <button
           type="button"
           onClick={() => setIsOpen((open) => !open)}
           aria-expanded={isOpen}
           aria-controls="mobile-nav-menu"
-          aria-label={isOpen ? 'Close menu' : 'Toggle menu'}
+          aria-label={isOpen ? "Close menu" : "Toggle menu"}
           className={hamburgerButtonClass}
         >
-          <span className={`${hamburgerBarClass} ${isOpen ? hamburgerTopBarOpenClass : ''}`} />
           <span
-            className={`${hamburgerBarClass} ${isOpen ? hamburgerMiddleBarOpenClass : hamburgerMiddleBarClosedClass}`}
+            className={`${hamburgerBarClass} ${
+              isOpen ? hamburgerTopBarOpenClass : ""
+            }`}
           />
-          <span className={`${hamburgerBarClass} ${isOpen ? hamburgerBottomBarOpenClass : ''}`} />
+
+          <span
+            className={`${hamburgerBarClass} ${
+              isOpen
+                ? hamburgerMiddleBarOpenClass
+                : hamburgerMiddleBarClosedClass
+            }`}
+          />
+
+          <span
+            className={`${hamburgerBarClass} ${
+              isOpen ? hamburgerBottomBarOpenClass : ""
+            }`}
+          />
         </button>
       </div>
 
+      {/* Mobile Navigation */}
       {isOpen && (
-        <ul id="mobile-nav-menu" className={mobileMenuClass}>
+        <ul
+          id="mobile-nav-menu"
+          className={mobileMenuClass}
+        >
           {NAV_LINKS.map((link) => (
-            <li key={link.href} className={mobileMenuItemClass}>
-              <Link
-                to={link.href}
+            <li
+              key={link.href}
+              className={mobileMenuItemClass}
+            >
+              <a
+                href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`${linkClass} ${link.href === activeHref ? activeLinkClass : ''}`}
+                className={`${linkClass} ${
+                  link.href === activeHref
+                    ? activeLinkClass
+                    : ""
+                }`}
               >
                 {link.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
       )}
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
