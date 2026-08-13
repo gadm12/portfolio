@@ -16,7 +16,7 @@ export const NAV_LINKS = [
 ];
 
 /**
- * Converts a full name into its initials, e.g. "Francisco Avila" -> "FA".
+ * Converts a full name into its initials, e.g. "Mohamed Gad" -> "MG".
  * Used for the brand mark in the top-left of the nav bar.
  */
 export function initials(name) {

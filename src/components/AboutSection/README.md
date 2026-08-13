@@ -2,7 +2,7 @@
 
 The "hero" section of the portfolio site. Renders a two-column layout:
 
-- **Left — `AboutHeader`**: an eyebrow line ("USMC Veteran · Software Engineer"), the person's name as a large display heading, their role/title, an optional italic tagline, a short bio paragraph, and a row of social links.
+- **Left — `AboutHeader`**: an eyebrow line ("US Army Veteran · Software Engineer"), the person's name as a large display heading, their role/title, an optional italic tagline, a short bio paragraph, and a row of social links.
 - **Right — `IdCard`**: a bordered "service record" card (the corner-bracket `.reticle` styling shared with `ProjectCard`) showing a photo (or initials fallback), and a `Role` / `Base` / `Active Since` field list.
 
 ![AboutSection rendered at desktop width](./resources/about-section-desktop.png)
@@ -28,23 +28,23 @@ AboutSection/
 `AboutSection.jsx` no longer imports `portfolio-data.json` or the asset files directly. `src/router.jsx`'s route `loader` (`loadPortfolioData`, in `src/utilities.jsx`) loads the JSON plus the `headshot.png`/`resume.pdf` assets once, and `App.jsx` hands the result to every routed page via `<Outlet context={...}>`. Since `AboutSection` is rendered inside `HomePage`, which is rendered inside that `<Outlet>`, it reads everything with a single `useOutletContext()` call:
 
 ```js
-const { data, headShot, resume } = useOutletContext()
+const { data, headShot, resume } = useOutletContext();
 ```
 
 `data` is the raw JSON (`data.about`, `data.socials`, `data.experience`, `data.education`); `headShot`/`resume` are the pre-resolved asset URLs.
 
 ## How it maps to `src/data/portfolio-data.json`
 
-| JSON field | Consumed by | Notes |
-| --- | --- | --- |
-| `about.name` | `AboutHeader` (heading), `IdCard` (`alt` text / initials fallback) | |
-| `about.title` | `AboutHeader` (role line), `IdCard` (`Role` row) | Same value, rendered in both places |
-| `about.tagline` | `AboutHeader` | Only rendered if truthy — empty string in the current data, so it doesn't show today |
-| `about.bio` | `AboutHeader` | |
-| `about.location` | `IdCard` (`Base` row) | Only rendered if truthy |
-| `about.photoUrl` | **Not used.** | See "Known discrepancy" below |
-| `socials.github` / `socials.linkedin` / `socials.email` | `AboutHeader` | Rendered as the underlined link row; `email` becomes a `mailto:` link, the others open in a new tab |
-| `experience[].dates`, `education[].dates` | `IdCard` (`Active Since` row) | Not rendered as lists here — only the earliest 4-digit year across both arrays is extracted (see `earliestYear` in `utilities.jsx`) |
+| JSON field                                              | Consumed by                                                        | Notes                                                                                                                               |
+| ------------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `about.name`                                            | `AboutHeader` (heading), `IdCard` (`alt` text / initials fallback) |                                                                                                                                     |
+| `about.title`                                           | `AboutHeader` (role line), `IdCard` (`Role` row)                   | Same value, rendered in both places                                                                                                 |
+| `about.tagline`                                         | `AboutHeader`                                                      | Only rendered if truthy — empty string in the current data, so it doesn't show today                                                |
+| `about.bio`                                             | `AboutHeader`                                                      |                                                                                                                                     |
+| `about.location`                                        | `IdCard` (`Base` row)                                              | Only rendered if truthy                                                                                                             |
+| `about.photoUrl`                                        | **Not used.**                                                      | See "Known discrepancy" below                                                                                                       |
+| `socials.github` / `socials.linkedin` / `socials.email` | `AboutHeader`                                                      | Rendered as the underlined link row; `email` becomes a `mailto:` link, the others open in a new tab                                 |
+| `experience[].dates`, `education[].dates`               | `IdCard` (`Active Since` row)                                      | Not rendered as lists here — only the earliest 4-digit year across both arrays is extracted (see `earliestYear` in `utilities.jsx`) |
 
 ### Known discrepancy: `photoUrl`
 

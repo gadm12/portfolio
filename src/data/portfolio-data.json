@@ -16,174 +16,224 @@
     {
       "name": "Python",
       "category": "Languages",
-      "icon": "python"
-    },
-    {
-      "name": "JavaScript",
-      "category": "Languages",
-      "icon": "javascript"
-    },
-    {
-      "name": "React",
-      "category": "Frontend",
-      "icon": "react"
-    },
-    {
-      "name": "Vite",
-      "category": "Frontend",
-      "icon": "vite"
-    },
-    {
-      "name": "Tailwind CSS",
-      "category": "Frontend",
-      "icon": "tailwind"
-    },
-    {
-      "name": "React Router",
-      "category": "Frontend",
-      "icon": "reactrouter"
+      "icon": "python",
+      "level": "primary"
     },
     {
       "name": "Django",
       "category": "Backend",
-      "icon": "django"
+      "icon": "django",
+      "level": "primary"
     },
     {
       "name": "Django REST Framework",
       "category": "Backend",
-      "icon": "drf"
-    },
-    {
-      "name": "PostgreSQL",
-      "category": "Databases",
-      "icon": "postgresql"
-    },
-    {
-      "name": "Redis",
-      "category": "Databases",
-      "icon": "redis"
-    },
-    {
-      "name": "Docker",
-      "category": "DevOps",
-      "icon": "docker"
-    },
-    {
-      "name": "GitHub Actions",
-      "category": "DevOps",
-      "icon": "githubactions"
-    },
-    { "name": "AWS", "category": "DevOps", "icon": "aws" },
-    {
-      "name": "Nginx",
-      "category": "DevOps",
-      "icon": "nginx"
-    },
-    {
-      "name": "Linux",
-      "category": "DevOps",
-      "icon": "linux"
-    },
-    {
-      "name": "Supabase",
-      "category": "BaaS",
-      "icon": "supabase"
-    },
-    {
-      "name": "Vercel",
-      "category": "PaaS",
-      "icon": "vercel"
-    },
-    {
-      "name": "Cypress",
-      "category": "Testing",
-      "icon": "cypress"
+      "icon": "drf",
+      "level": "primary"
     },
     {
       "name": "Pytest",
       "category": "Testing",
-      "icon": "pytest"
+      "icon": "pytest",
+      "level": "primary"
+    },
+
+    {
+      "name": "PostgreSQL",
+      "category": "Databases",
+      "icon": "postgresql",
+      "level": "primary"
     },
     {
-      "name": "Jest",
-      "category": "Testing",
-      "icon": "jest"
-    },
-    { "name": "Git", "category": "Tools", "icon": "git" },
-    {
-      "name": "Axios",
-      "category": "Tools",
-      "icon": "axios"
-    },
-    {
-      "name": "Stripe",
-      "category": "Tools",
-      "icon": "stripe"
-    },
-    {
-      "name": "Claude Code",
-      "category": "AI",
-      "icon": "claudecode"
-    },
-    {
-      "name": "Gemini",
-      "category": "AI",
-      "icon": "gemini"
-    },
-    {
-      "name": "BootStrap",
-      "category": "Frontend",
-      "icon": "bootstrap"
-    },
-    {
-      "name": "HTML",
-      "category": "Frontend",
-      "icon": "html"
-    },
-    {
-      "name": "CSS",
-      "category": "Frontend",
-      "icon": "css"
-    },
-    {
-      "name": "PyTorch",
-      "category": "AI",
-      "icon": "pytorch"
-    },
-    {
-      "name": "Scikit-learn",
-      "category": "AI",
-      "icon": "scikitlearn"
+      "name": "Redis",
+      "category": "Databases",
+      "icon": "redis",
+      "level": "supporting"
     },
     {
       "name": "Pandas",
       "category": "Data Analysis",
-      "icon": "pandas"
+      "icon": "pandas",
+      "level": "supporting"
     },
     {
       "name": "NumPy",
       "category": "Data Analysis",
-      "icon": "numpy"
+      "icon": "numpy",
+      "level": "supporting"
     },
     {
-      "name": "Github Pages",
-      "category": "PaaS",
-      "icon": "githubpages"
+      "name": "Supabase",
+      "category": "BaaS",
+      "icon": "supabase",
+      "level": "supporting"
+    },
+    {
+      "name": "JavaScript",
+      "category": "Languages",
+      "icon": "javascript",
+      "level": "primary"
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "icon": "react",
+      "level": "primary"
+    },
+    {
+      "name": "Cypress",
+      "category": "Testing",
+      "icon": "cypress",
+      "level": "primary"
+    },
+    {
+      "name": "Vite",
+      "category": "Frontend",
+      "icon": "vite",
+      "level": "secondary"
+    },
+    {
+      "name": "React Router",
+      "category": "Frontend",
+      "icon": "reactrouter",
+      "level": "secondary"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "icon": "tailwind",
+      "level": "secondary"
+    },
+    {
+      "name": "Jest",
+      "category": "Testing",
+      "icon": "jest",
+      "level": "supporting"
+    },
+    {
+      "name": "Bootstrap",
+      "category": "Frontend",
+      "icon": "bootstrap",
+      "level": "supporting"
+    },
+    {
+      "name": "HTML",
+      "category": "Frontend",
+      "icon": "html",
+      "level": "supporting"
+    },
+    {
+      "name": "CSS",
+      "category": "Frontend",
+      "icon": "css",
+      "level": "supporting"
+    },
+
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "icon": "docker",
+      "level": "primary"
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "DevOps",
+      "icon": "githubactions",
+      "level": "primary"
+    },
+    {
+      "name": "AWS",
+      "category": "DevOps",
+      "icon": "aws",
+      "level": "secondary"
+    },
+    {
+      "name": "Nginx",
+      "category": "DevOps",
+      "icon": "nginx",
+      "level": "secondary"
+    },
+    {
+      "name": "Linux",
+      "category": "DevOps",
+      "icon": "linux",
+      "level": "secondary"
+    },
+
+    {
+      "name": "Git",
+      "category": "Tools",
+      "icon": "git",
+      "level": "secondary"
+    },
+    {
+      "name": "GitHub",
+      "category": "Tools",
+      "icon": "github",
+      "level": "secondary"
+    },
+    {
+      "name": "Axios",
+      "category": "Tools",
+      "icon": "axios",
+      "level": "secondary"
     },
     {
       "name": "Postman",
-      "category": "Software",
-      "icon": "postman"
+      "category": "Tools",
+      "icon": "postman",
+      "level": "secondary"
     },
+    {
+      "name": "Stripe",
+      "category": "Tools",
+      "icon": "stripe",
+      "level": "supporting"
+    },
+
+    {
+      "name": "Claude Code",
+      "category": "AI",
+      "icon": "claudecode",
+      "level": "supporting"
+    },
+    {
+      "name": "Gemini",
+      "category": "AI",
+      "icon": "gemini",
+      "level": "supporting"
+    },
+    {
+      "name": "PyTorch",
+      "category": "AI",
+      "icon": "pytorch",
+      "level": "supporting"
+    },
+    {
+      "name": "Scikit-learn",
+      "category": "AI",
+      "icon": "scikitlearn",
+      "level": "supporting"
+    },
+
+    {
+      "name": "Vercel",
+      "category": "PaaS",
+      "icon": "vercel",
+      "level": "supporting"
+    },
+    {
+      "name": "GitHub Pages",
+      "category": "PaaS",
+      "icon": "githubpages",
+      "level": "supporting"
+    },
+
     {
       "name": "Figma",
       "category": "Software",
-      "icon": "figma"
-    },
-    {
-      "name": "Github",
-      "category": "Tools",
-      "icon": "github"
+      "icon": "figma",
+      "level": "supporting"
     }
   ],
   "experience": [
@@ -258,7 +308,7 @@
       "stack": ["Python", "Rich", "Pytest", "Docker"],
       "repoUrl": "",
       "liveUrl": "",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjOYy80-B_QFrZsq-3OSsM32ELOVwKmyPMDeQjqOtCg&s=10",
+      "imageUrl": "",
       "featured": false
     },
     {

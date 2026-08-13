@@ -13,7 +13,7 @@ import {
 function AboutHeader({ name, title, tagline, bio, socials }) {
   return (
     <div className={headerWrapperClass}>
-      <p className={eyebrowClass}>USMC Veteran &middot; Software Engineer</p>
+      <p className={eyebrowClass}>US Army Veteran &middot; Software Engineer</p>
       <h1 className={headingClass}>{name}</h1>
       <p className={roleClass}>{title}</p>
       {tagline && <p className={taglineClass}>{tagline}</p>}

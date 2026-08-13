@@ -1,4 +1,4 @@
-import { initials } from '../utilities.jsx'
+import { initials } from "../utilities.jsx";
 import {
   idCardWrapperClass,
   idCardBodyClass,
@@ -9,16 +9,31 @@ import {
   idRowLastClass,
   idLabelClass,
   idValueClass,
-} from '../styles/tailwindStyles.jsx'
+} from "../styles/tailwindStyles.jsx";
 
-function IdCard({ name, title, location, activeSince, photoUrl }) {
+function IdCard({
+  name,
+  title,
+  location,
+  activeSince,
+  photoUrl,
+}) {
   return (
-    <div className={idCardWrapperClass} style={{ animationDelay: '120ms' }}>
+    <div
+      className={idCardWrapperClass}
+      style={{ animationDelay: "120ms" }}
+    >
       <div className={idCardBodyClass}>
         {photoUrl ? (
-          <img src={photoUrl} alt={name} className={idPhotoClass} />
+          <img
+            src={photoUrl}
+            alt={name}
+            className={idPhotoClass}
+          />
         ) : (
-          <div className={idInitialsClass}>{initials(name)}</div>
+          <div className={idInitialsClass}>
+            {initials(name)}
+          </div>
         )}
         <dl className={idListClass}>
           <div className={idRowClass}>
@@ -27,18 +42,20 @@ function IdCard({ name, title, location, activeSince, photoUrl }) {
           </div>
           {location && (
             <div className={idRowClass}>
-              <dt className={idLabelClass}>Location</dt>
-              <dd className={idValueClass}>{location}</dd>
+              <dt className={idLabelClass}>Focus</dt>
+              <dd className={idValueClass}>
+                Backend Development
+              </dd>
             </div>
           )}
           <div className={idRowLastClass}>
-            <dt className={idLabelClass}>Active Since</dt>
-            <dd className={idValueClass}>{activeSince}</dd>
+            <dt className={idLabelClass}>Location</dt>
+            <dd className={idValueClass}>{location}</dd>
           </div>
         </dl>
       </div>
     </div>
-  )
+  );
 }
 
-export default IdCard
+export default IdCard;
