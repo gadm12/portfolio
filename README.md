@@ -1,8 +1,12 @@
-# Portfolio Template
+# Mohamed Gad - Portfolio
 
-A single-page developer portfolio built with React 19, Vite, and Tailwind CSS v4. Every piece of content — bio, socials, skills, experience, education, projects, contact info — is loaded from one JSON file (plus two static assets for your photo and résumé) through a React Router data loader, so the site can be re-skinned for a new person without touching component code.
+My personal developer portfolio, built with React 19, Vite, and Tailwind CSS v4. All content - bio, socials, skills, experience, education, projects, and contact info — is driven from a single JSON file, loaded through a React Router data loader.
 
-The current content is a working example (Francisco Avila's portfolio) — fork it, replace the data, and it's yours.
+**Live site:** [gadm12.github.io/portfolio](https://gadm12.github.io/portfolio/)
+
+## About me
+
+I'm a U.S. Army veteran (11 years of service) transitioning into software development. I hold a BSIT from University of Phoenix and I'm currently attending Code Platoon, a veteran-focused software engineering bootcamp, with the goal of moving into remote software engineering work.
 
 ## Features
 
@@ -10,7 +14,7 @@ The current content is a working example (Francisco Avila's portfolio) — fork 
 - **Filterable skills grid** — filter by category; remaining tiles grow to fill the available space instead of leaving dead space or shrinking the grid.
 - **Project carousel** — a featured project card with prev/next navigation, a directional slide animation, and a scrollable description/stack block, plus a full list of every project below it.
 - **Responsive nav** — a horizontal link row on medium screens and up, collapsing to a hamburger-triggered dropdown on smaller screens (including mobile).
-- **Scroll-spy navigation** — the nav link for whichever section is currently centered in the viewport highlights automatically, and the URL hash silently stays in sync as you scroll.
+- **Scroll-spy navigation** — the nav link for whichever section is currently centered in the viewport highlights automatically, and the URL hash silently stays in sync as you scroll (basename-aware, so it plays nicely with the GitHub Pages subpath).
 - **One loader, no prop drilling** — a single React Router `loader` fetches the JSON data and resolves the photo/résumé assets once; every section reads it via `useOutletContext()` instead of importing the JSON file directly.
 
 ## Tech stack
@@ -37,7 +41,7 @@ Then open `http://localhost:5173`.
 - `npm run preview` — locally preview the production build
 - `npm run lint` — run oxlint
 
-## Customizing the content
+## Content
 
 Almost everything on the page comes from one file:
 
@@ -45,11 +49,11 @@ Almost everything on the page comes from one file:
 src/data/portfolio-data.json
 ```
 
-Open it and replace the sample values with your own — the dev server hot-reloads on save. Your photo and résumé are separate static files, not JSON fields:
+My photo and résumé are separate static files, not JSON fields:
 
 ```
-src/assets/headshot.png   # your photo — replace this file directly
-src/assets/resume.pdf     # your résumé — replace this file directly
+src/assets/headshot.png
+src/assets/resume.pdf
 ```
 
 Both are resolved once by the route loader (`loadPortfolioData` in `src/utilities.jsx`) alongside the JSON data, and handed to every page via React Router's `useLoaderData()`/`useOutletContext()` — see "How data flows" below.
@@ -67,9 +71,24 @@ Both are resolved once by the route loader (`loadPortfolioData` in `src/utilitie
     "location": ""
   },
   "socials": { "github": "", "linkedin": "", "email": "" },
-  "skills": [{ "name": "Python", "category": "Languages", "icon": "python" }],
-  "experience": [{ "role": "", "org": "", "dates": "", "bullets": [] }],
-  "education": [{ "school": "", "program": "", "dates": "", "description": "" }],
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Languages",
+      "icon": "python"
+    }
+  ],
+  "experience": [
+    { "role": "", "org": "", "dates": "", "bullets": [] }
+  ],
+  "education": [
+    {
+      "school": "",
+      "program": "",
+      "dates": "",
+      "description": ""
+    }
+  ],
   "projects": [
     {
       "title": "",
@@ -110,10 +129,10 @@ src/
 ├── App.jsx                     # layout: Navbar + routed page content (Outlet) + Footer
 ├── index.css                    # global styles, Tailwind entry, shared keyframes
 ├── assets/
-│   ├── headshot.png            # <- your photo
-│   └── resume.pdf               # <- your résumé
+│   ├── headshot.png            # my photo
+│   └── resume.pdf               # my résumé
 ├── data/
-│   └── portfolio-data.json      # <- the file you edit
+│   └── portfolio-data.json      # the content file
 ├── pages/
 │   ├── HomePage.jsx             # composes all sections in order
 │   └── NotFoundPage.jsx
@@ -127,8 +146,8 @@ src/
     └── Footer/
 ```
 
-Every component directory follows the same shape — a top-level `<ComponentName>.jsx`, a `subComponents/`/`subcomponents/` folder for anything it breaks into, `utilities.jsx` for its helper functions/hooks, a `styles/` folder (`tailwindStyles.jsx` for extracted class strings, `styles.css` for any bespoke CSS), and its own `README.md` explaining exactly how it works and how it maps to `portfolio-data.json`. Start there before editing a component — each README is more detailed than this top-level one for its specific piece.
+Every component directory follows the same shape — a top-level `<ComponentName>.jsx`, a `subComponents/`/`subcomponents/` folder for anything it breaks into, `utilities.jsx` for its helper functions/hooks, a `styles/` folder (`tailwindStyles.jsx` for extracted class strings, `styles.css` for any bespoke CSS), and its own `README.md` explaining exactly how it works and how it maps to `portfolio-data.json`.
 
 ## Deploying
 
-Not set up yet in this template — a GitHub Pages + GitHub Actions deploy workflow (matching the pattern from the React assessment) is a natural next step once you're happy with your content.
+Deployed to GitHub Pages via GitHub Actions on every push to `main` (see `.github/workflows/`). The build uses Vite's `base: "/portfolio/"` config combined with a `basename`-aware React Router setup so deep links, scroll-spy hash updates, and hard refreshes all resolve correctly under the `/portfolio/` subpath.
