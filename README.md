@@ -151,3 +151,10 @@ Every component directory follows the same shape — a top-level `<ComponentName
 ## Deploying
 
 Deployed to GitHub Pages via GitHub Actions on every push to `main` (see `.github/workflows/`). The build uses Vite's `base: "/portfolio/"` config combined with a `basename`-aware React Router setup so deep links, scroll-spy hash updates, and hard refreshes all resolve correctly under the `/portfolio/` subpath.
+
+## Credit
+
+This project started from a portfolio template built by my Code Platoon
+instructor, Francisco Avila. I customized the content, fixed deployment
+and routing bugs (GitHub Pages basename config, scroll-spy URL sync),
+and made it my own from there.
