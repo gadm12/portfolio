@@ -303,6 +303,53 @@
   ],
   "projects": [
     {
+      "title": "School Manager API",
+      "description": "A full-stack school management application built for staff to manage student data, browse subjects, and access book information through the Google Books API. Features token authentication, PostgreSQL persistence, Redis caching, API throttling, and a React frontend connected to Django REST Framework.",
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "React",
+        "JavaScript",
+        "Axios",
+        "PostgreSQL",
+        "Psycopg3",
+        "Redis",
+        "Docker",
+        "Nginx",
+        "Gunicorn",
+        "Tailwind CSS",
+        "DRF Token Authentication",
+        "Google Books API",
+        "Django TestCase"
+      ],
+      "repoUrl": "https://github.com/gadm12/school-API",
+      "liveUrl": "",
+      "imageUrl": "/project-demos/school-api-demo.gif",
+      "videoUrl": "",
+      "featured": true
+    },
+    {
+      "title": "Agentic Coding Project - CaloriQ",
+      "description": "The Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
+      "stack": [
+        "Supabase",
+        "Vercel",
+        "PostgREST",
+        "PostgreSQL",
+        "Edge Functions",
+        "Vite",
+        "React",
+        "TLDraw",
+        "Claude Code",
+        "drawSQL"
+      ],
+      "repoUrl": "https://github.com/gadm12/caloriQ_app",
+      "liveUrl": "https://caloriq-psi.vercel.app/",
+      "imageUrl": "/project-demos/CaloriQ-demo.gif",
+      "featured": false
+    },
+    {
       "title": "The Video Store",
       "description": "The Video Store is a OOP Python terminal program that allows users to manage a video rental store, including adding, updating, and deleting video records, as well as tracking rentals and returns.",
       "stack": ["Python", "Rich", "Pytest", "Docker"],
@@ -348,28 +395,7 @@
       "imageUrl": "",
       "featured": false
     },
-    {
-      "title": "School Manager API",
-      "description": "The School Manager API is a backend service that provides endpoints for managing students, teachers, classes, and other school-related data in a school management application.",
-      "stack": [
-        "Python",
-        "Django",
-        "Django REST Framework",
-        "Django CORS Headers",
-        "Psycopg3",
-        "PostgreSQL",
-        "Pytest",
-        "Docker",
-        "Gunicorn",
-        "Redis",
-        "DRF Token Authentication",
-        "Django Test Case"
-      ],
-      "repoUrl": "",
-      "liveUrl": "",
-      "imageUrl": "",
-      "featured": false
-    },
+
     {
       "title": "E-Commerce API",
       "description": "The E-Commerce API is a backend service that provides endpoints for managing products, orders, and users in an e-commerce application.",
@@ -390,7 +416,7 @@
       "repoUrl": "",
       "liveUrl": "",
       "imageUrl": "",
-      "featured": true
+      "featured": false
     },
     {
       "title": "Personal Project",
@@ -426,26 +452,7 @@
       "imageUrl": "",
       "featured": false
     },
-    {
-      "title": "Agentic Coding Project",
-      "description": "The Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
-      "stack": [
-        "Supabase",
-        "Vercel",
-        "PostgREST",
-        "PostgreSQL",
-        "Edge Functions",
-        "Vite",
-        "React",
-        "TLDraw",
-        "Claude Code",
-        "drawSQL"
-      ],
-      "repoUrl": "",
-      "liveUrl": "",
-      "imageUrl": "",
-      "featured": true
-    },
+
     {
       "title": "Group Project",
       "description": "The Group Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's built through collaboration with a 5-10 person team that I participated in.",

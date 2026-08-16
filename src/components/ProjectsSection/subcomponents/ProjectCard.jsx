@@ -1,5 +1,5 @@
-import CardLink from './CardLink.jsx'
-import { padIndex } from './utilities.jsx'
+import CardLink from "./CardLink.jsx";
+import { padIndex } from "./utilities.jsx";
 import {
   cardBaseClass,
   cardSlideNextClass,
@@ -16,17 +16,32 @@ import {
   cardDescriptionClass,
   cardStackListClass,
   cardLinkRowClass,
-} from '../styles/tailwindStyles.jsx'
-import '../styles/styles.css'
+} from "../styles/tailwindStyles.jsx";
+import "../styles/styles.css";
 
-function ProjectCard({ project, index, total, onPrev, onNext, direction = 'next' }) {
-  const { title, description, stack, repoUrl, liveUrl, imageUrl } = project
+function ProjectCard({
+  project,
+  index,
+  total,
+  onPrev,
+  onNext,
+  direction = "next",
+}) {
+  const {
+    title,
+    description,
+    stack,
+    repoUrl,
+    liveUrl,
+    imageUrl,
+    videoUrl,
+  } = project;
 
   return (
     <div
       role="group"
       aria-label={`Project ${index + 1} of ${total}: ${title}`}
-      className={`${cardBaseClass} ${direction === 'prev' ? cardSlidePrevClass : cardSlideNextClass}`}
+      className={`${cardBaseClass} ${direction === "prev" ? cardSlidePrevClass : cardSlideNextClass}`}
     >
       <div className={cardHeaderRowClass}>
         <h3 className={cardTitleClass}>{title}</h3>
@@ -36,25 +51,53 @@ function ProjectCard({ project, index, total, onPrev, onNext, direction = 'next'
       </div>
 
       <div className={cardImageRowClass}>
-        <button type="button" onClick={onPrev} aria-label="Previous project" className={cardNavButtonClass}>
+        <button
+          type="button"
+          onClick={onPrev}
+          aria-label="Previous project"
+          className={cardNavButtonClass}
+        >
           &lsaquo;
         </button>
 
         <div className={cardImageFrameClass}>
-          {imageUrl ? (
-            <img src={imageUrl} alt={title} className={cardImageClass} />
+          {videoUrl ? (
+            <video
+              src={videoUrl}
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className={cardImageClass}
+            />
+          ) : imageUrl ? (
+            <img
+              src={imageUrl}
+              alt={title}
+              className={cardImageClass}
+            />
           ) : (
-            <span className={cardImagePlaceholderClass}>{padIndex(index + 1)}</span>
+            <span className={cardImagePlaceholderClass}>
+              {padIndex(index + 1)}
+            </span>
           )}
         </div>
 
-        <button type="button" onClick={onNext} aria-label="Next project" className={cardNavButtonClass}>
+        <button
+          type="button"
+          onClick={onNext}
+          aria-label="Next project"
+          className={cardNavButtonClass}
+        >
           &rsaquo;
         </button>
       </div>
 
       <div className={cardScrollBlockClass}>
-        <p className={cardDescriptionClass}>{description}</p>
+        <p className={cardDescriptionClass}>
+          {description}
+        </p>
 
         <ul className={cardStackListClass}>
           {stack.map((tech) => (
@@ -68,7 +111,7 @@ function ProjectCard({ project, index, total, onPrev, onNext, direction = 'next'
         <CardLink href={repoUrl}>Repo</CardLink>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
