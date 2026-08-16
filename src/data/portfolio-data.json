@@ -326,7 +326,7 @@
       "repoUrl": "https://github.com/gadm12/school-API",
       "liveUrl": "",
       "imageUrl": "",
-      "videoUrl": "/project-demos/school-api-demo.mp4",
+      "videoUrl": "project-demos/school-api-demo.mp4",
       "featured": true
     },
     {
@@ -346,7 +346,7 @@
       ],
       "repoUrl": "https://github.com/gadm12/caloriQ_app",
       "liveUrl": "https://caloriq-psi.vercel.app/",
-      "imageUrl": "/project-demos/CaloriQ-demo.gif",
+      "imageUrl": "project-demos/CaloriQ-demo.gif",
       "featured": false
     },
     {

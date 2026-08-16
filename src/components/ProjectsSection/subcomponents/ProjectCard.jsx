@@ -27,6 +27,7 @@ function ProjectCard({
   onNext,
   direction = "next",
 }) {
+  const base = import.meta.env.BASE_URL;
   const {
     title,
     description,
@@ -36,6 +37,13 @@ function ProjectCard({
     imageUrl,
     videoUrl,
   } = project;
+  const resolvedVideoUrl = videoUrl
+    ? `${base}${videoUrl}`
+    : "";
+
+  const resolvedImageUrl = imageUrl
+    ? `${base}${imageUrl}`
+    : "";
 
   return (
     <div
@@ -61,9 +69,9 @@ function ProjectCard({
         </button>
 
         <div className={cardImageFrameClass}>
-          {videoUrl ? (
+          {resolvedVideoUrl ? (
             <video
-              src={videoUrl}
+              src={resolvedVideoUrl}
               autoPlay
               loop
               muted
@@ -71,9 +79,9 @@ function ProjectCard({
               controls
               className={cardImageClass}
             />
-          ) : imageUrl ? (
+          ) : resolvedImageUrl ? (
             <img
-              src={imageUrl}
+              src={resolvedImageUrl}
               alt={title}
               className={cardImageClass}
             />
