@@ -303,7 +303,7 @@
   ],
   "projects": [
     {
-      "title": "School Manager API",
+      "title": "School Manager API  - React & Django",
       "description": "A full-stack school management application built for staff to manage student data, browse subjects, and access book information through the Google Books API. Features token authentication, PostgreSQL persistence, Redis caching, API throttling, and a React frontend connected to Django REST Framework.",
       "stack": [
         "Python",
@@ -323,7 +323,7 @@
         "Google Books API",
         "Django TestCase"
       ],
-      "repoUrl": "https://github.com/gadm12/school-API - React & Django",
+      "repoUrl": "https://github.com/gadm12/school-API",
       "liveUrl": "",
       "imageUrl": "project-demos/school-api-demo.gif",
       "videoUrl": "",
