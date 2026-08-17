@@ -323,15 +323,15 @@
         "Google Books API",
         "Django TestCase"
       ],
-      "repoUrl": "https://github.com/gadm12/school-API",
+      "repoUrl": "https://github.com/gadm12/school-API - React & Django",
       "liveUrl": "",
       "imageUrl": "project-demos/school-api-demo.gif",
       "videoUrl": "",
       "featured": true
     },
     {
-      "title": "Agentic Coding Project - CaloriQ",
-      "description": "The Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
+      "title": "CaloriQ - Agentic Coding Project",
+      "description": "CaloriQ - Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
       "stack": [
         "Supabase",
         "Vercel",
@@ -350,12 +350,12 @@
       "featured": false
     },
     {
-      "title": "The Video Store",
+      "title": "The Video Store - Object-Oriented Programming",
       "description": "The Video Store is a OOP Python terminal program that allows users to manage a video rental store, including adding, updating, and deleting video records, as well as tracking rentals and returns.",
       "stack": ["Python", "Rich", "Pytest", "Docker"],
-      "repoUrl": "",
+      "repoUrl": "https://github.com/gadm12/video-store-oop",
       "liveUrl": "",
-      "imageUrl": "",
+      "imageUrl": "project-demos/video-store-oop.png",
       "featured": false
     },
     {
