@@ -359,6 +359,15 @@
       "featured": false
     },
     {
+      "title": "School Management System - Object-Oriented Programming",
+      "description": "A Python OOP terminal application for managing students and staff. Built to demonstrate inheritance, encapsulation, polymorphism, composition, CSV data handling, validation, and automated testing.",
+      "stack": ["Python", "Rich", "Pytest", "Pylint"],
+      "repoUrl": "https://github.com/gadm12/school-oop",
+      "liveUrl": "",
+      "imageUrl": "project-demos/school-oop.png",
+      "featured": false
+    },
+    {
       "title": "Pokemon Informant",
       "description": "The Pokemon Informant is a web application that provides detailed information about Pokemon by leveraging the PokeAPI to fetch and display data about various Pokemon.",
       "stack": [
