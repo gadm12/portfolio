@@ -330,6 +330,28 @@
       "featured": true
     },
     {
+      "title": "E-Commerce API - Django",
+      "description": "The E-Commerce API is a backend service that provides endpoints for managing products, orders, and users in an e-commerce application.",
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "Django CORS Headers",
+        "Psycopg3",
+        "PostgreSQL",
+        "Pytest",
+        "Docker",
+        "Gunicorn",
+        "Redis",
+        "Django Simple JWT",
+        "Django Test Case"
+      ],
+      "repoUrl": "https://github.com/gadm12/ecommerce-api",
+      "liveUrl": "",
+      "imageUrl": "project-demos/ecommerce-api.png",
+      "featured": false
+    },
+    {
       "title": "CaloriQ - Agentic Coding Project",
       "description": "CaloriQ - Agentic Coding Project is a web application that was built by completely relying on Agentic Tools like Claude Code to build a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
       "stack": [
@@ -398,29 +420,6 @@
         "React-Router-DOM",
         "Axios",
         "Cypress"
-      ],
-      "repoUrl": "",
-      "liveUrl": "",
-      "imageUrl": "",
-      "featured": false
-    },
-
-    {
-      "title": "E-Commerce API",
-      "description": "The E-Commerce API is a backend service that provides endpoints for managing products, orders, and users in an e-commerce application.",
-      "stack": [
-        "Python",
-        "Django",
-        "Django REST Framework",
-        "Django CORS Headers",
-        "Psycopg3",
-        "PostgreSQL",
-        "Pytest",
-        "Docker",
-        "Gunicorn",
-        "Redis",
-        "Django Simple JWT",
-        "Django Test Case"
       ],
       "repoUrl": "",
       "liveUrl": "",
