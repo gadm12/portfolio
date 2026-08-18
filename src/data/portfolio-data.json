@@ -348,7 +348,25 @@
       ],
       "repoUrl": "https://github.com/gadm12/ecommerce-api",
       "liveUrl": "",
-      "imageUrl": "project-demos/ecommerce-api.png",
+      "imageUrl": "project-demos/ecommerce-api.gif",
+      "featured": false
+    },
+    {
+      "title": "Pokemon Informant - React",
+      "description": "The Pokemon Informant is a web application that provides detailed information about Pokemon by leveraging the PokeAPI to fetch and display data about various Pokemon.",
+      "stack": [
+        "Vite",
+        "React",
+        "JavaScript",
+        "CSS",
+        "React-Router-DOM",
+        "Axios",
+        "Cypress",
+        "Docker"
+      ],
+      "repoUrl": "https://github.com/gadm12/pokemon-informant",
+      "liveUrl": "https://gadm12.github.io/pokemon-informant/#/",
+      "imageUrl": "project-demos/pokemon-informant-demo.gif",
       "featured": false
     },
     {
@@ -387,25 +405,6 @@
       "repoUrl": "https://github.com/gadm12/school-oop",
       "liveUrl": "",
       "imageUrl": "project-demos/school-oop.png",
-      "featured": false
-    },
-    {
-      "title": "Pokemon Informant",
-      "description": "The Pokemon Informant is a web application that provides detailed information about Pokemon by leveraging the PokeAPI to fetch and display data about various Pokemon.",
-      "stack": [
-        "Vite",
-        "React",
-        "JavaScript",
-        "CSS",
-        "Tailwind",
-        "React-Router-DOM",
-        "Axios",
-        "Cypress",
-        "Docker"
-      ],
-      "repoUrl": "",
-      "liveUrl": "",
-      "imageUrl": "",
       "featured": false
     },
     {
