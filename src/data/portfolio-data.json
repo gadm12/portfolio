@@ -179,6 +179,12 @@
       "icon": "claudecode",
       "level": "primary"
     },
+    {
+      "name": "ChatGPT Codex",
+      "section": "tools",
+      "icon": "openai",
+      "level": "primary"
+    },
 
     {
       "name": "Stripe",
@@ -235,12 +241,6 @@
       "name": "NumPy",
       "section": "tools",
       "icon": "numpy",
-      "level": "supporting"
-    },
-    {
-      "name": "ChatGPT Codex",
-      "section": "tools",
-      "icon": "openai",
       "level": "supporting"
     }
   ],
@@ -306,7 +306,7 @@
       "school": "University of Phoenix",
       "program": "Bachelor of Science in Information Technology",
       "dates": "2022 - 2026",
-      "description": "Bachelor of Science in Information Technology. GPA: 3.58."
+      "description": "Bachelor of Science in Information Technology. GPA: 3.58"
     }
   ],
   "projects": [
