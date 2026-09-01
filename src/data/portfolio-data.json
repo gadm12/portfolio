@@ -31,12 +31,6 @@
       "icon": "drf",
       "level": "primary"
     },
-    {
-      "name": "Pytest",
-      "section": "tools",
-      "icon": "pytest",
-      "level": "primary"
-    },
 
     {
       "name": "PostgreSQL",
@@ -45,27 +39,27 @@
       "level": "primary"
     },
     {
-      "name": "Redis",
+      "name": "Pytest",
       "section": "backend",
-      "icon": "redis",
-      "level": "supporting"
+      "icon": "pytest",
+      "level": "primary"
     },
     {
-      "name": "Pandas",
-      "section": "tools",
-      "icon": "pandas",
-      "level": "supporting"
-    },
-    {
-      "name": "NumPy",
-      "section": "tools",
-      "icon": "numpy",
-      "level": "supporting"
+      "name": "Postman",
+      "section": "backend",
+      "icon": "postman",
+      "level": "primary"
     },
     {
       "name": "Supabase",
       "section": "backend",
       "icon": "supabase",
+      "level": "supporting"
+    },
+    {
+      "name": "Redis",
+      "section": "backend",
+      "icon": "redis",
       "level": "supporting"
     },
     {
@@ -81,8 +75,20 @@
       "level": "primary"
     },
     {
+      "name": "React Router",
+      "section": "frontend",
+      "icon": "reactrouter",
+      "level": "primary"
+    },
+    {
+      "name": "Axios",
+      "section": "frontend",
+      "icon": "axios",
+      "level": "primary"
+    },
+    {
       "name": "Cypress",
-      "section": "tools",
+      "section": "frontend",
       "icon": "cypress",
       "level": "primary"
     },
@@ -93,12 +99,6 @@
       "level": "secondary"
     },
     {
-      "name": "React Router",
-      "section": "frontend",
-      "icon": "reactrouter",
-      "level": "secondary"
-    },
-    {
       "name": "Tailwind CSS",
       "section": "frontend",
       "icon": "tailwind",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Jest",
-      "section": "tools",
+      "section": "frontend",
       "icon": "jest",
       "level": "supporting"
     },
@@ -141,6 +141,7 @@
       "icon": "githubactions",
       "level": "primary"
     },
+
     {
       "name": "AWS",
       "section": "devops",
@@ -159,31 +160,26 @@
       "icon": "linux",
       "level": "secondary"
     },
-
     {
       "name": "Git",
       "section": "tools",
       "icon": "git",
-      "level": "secondary"
+      "level": "primary"
     },
+
     {
       "name": "GitHub",
       "section": "tools",
       "icon": "github",
-      "level": "secondary"
+      "level": "primary"
     },
     {
-      "name": "Axios",
-      "section": "frontend",
-      "icon": "axios",
-      "level": "secondary"
-    },
-    {
-      "name": "Postman",
+      "name": "Claude Code",
       "section": "tools",
-      "icon": "postman",
-      "level": "secondary"
+      "icon": "claudecode",
+      "level": "primary"
     },
+
     {
       "name": "Stripe",
       "section": "tools",
@@ -191,12 +187,6 @@
       "level": "supporting"
     },
 
-    {
-      "name": "Claude Code",
-      "section": "tools",
-      "icon": "claudecode",
-      "level": "supporting"
-    },
     {
       "name": "Gemini",
       "section": "tools",
@@ -209,23 +199,17 @@
       "icon": "pytorch",
       "level": "supporting"
     },
-    {
-      "name": "Scikit-learn",
-      "section": "tools",
-      "icon": "scikitlearn",
-      "level": "supporting"
-    },
 
-    {
-      "name": "Vercel",
-      "section": "devops",
-      "icon": "vercel",
-      "level": "supporting"
-    },
     {
       "name": "GitHub Pages",
       "section": "devops",
       "icon": "githubpages",
+      "level": "secondary"
+    },
+    {
+      "name": "Vercel",
+      "section": "devops",
+      "icon": "vercel",
       "level": "supporting"
     },
 
@@ -233,6 +217,24 @@
       "name": "Figma",
       "section": "tools",
       "icon": "figma",
+      "level": "supporting"
+    },
+    {
+      "name": "Scikit-learn",
+      "section": "tools",
+      "icon": "scikitlearn",
+      "level": "supporting"
+    },
+    {
+      "name": "Pandas",
+      "section": "tools",
+      "icon": "pandas",
+      "level": "supporting"
+    },
+    {
+      "name": "NumPy",
+      "section": "tools",
+      "icon": "numpy",
       "level": "supporting"
     }
   ],
