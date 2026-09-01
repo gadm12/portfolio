@@ -1,6 +1,9 @@
-// All icon-importing logic for SkillsSection, sourced from react-icons/si
-// (plus one react-icons/di icon — AWS has no Simple Icons mark). Each entry
-// in SKILL_ICONS maps a `skill.icon` key from portfolio-data.json to the
+// All icon-importing logic for SkillsSection, sourced from react-icons/si,
+// plus two icons from other react-icons sets where Simple Icons has no
+// usable mark: DiAws (Devicons) for AWS, and BsOpenai (Bootstrap Icons) for
+// OpenAI — react-icons 5.x's `si` set ships only SiOpenaigym, which is the
+// reinforcement-learning toolkit, a different product. Each entry in
+// SKILL_ICONS maps a `skill.icon` key from portfolio-data.json to the
 // react-icons component that renders it and its brand color.
 
 import {
@@ -40,6 +43,7 @@ import {
   SiGithub,
 } from 'react-icons/si'
 import { DiAws } from 'react-icons/di'
+import { BsOpenai } from 'react-icons/bs'
 
 export const SKILL_ICONS = {
   python: { Icon: SiPython, color: '#3776AB' },
@@ -77,6 +81,7 @@ export const SKILL_ICONS = {
   postman: { Icon: SiPostman, color: '#FF6C37' },
   figma: { Icon: SiFigma, color: '#F24E1E' },
   github: { Icon: SiGithub, color: '#181717' },
+  openai: { Icon: BsOpenai, color: '#412991' },
 }
 
 // Skills with no distinct brand mark (a practice/spec rather than a product,

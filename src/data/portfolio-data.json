@@ -236,6 +236,12 @@
       "section": "tools",
       "icon": "numpy",
       "level": "supporting"
+    },
+    {
+      "name": "ChatGPT Codex",
+      "section": "tools",
+      "icon": "openai",
+      "level": "supporting"
     }
   ],
   "experience": [
