@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useOutletContext } from 'react-router-dom'
-import ProjectCard from './subcomponents/ProjectCard.jsx'
-import ProjectLinkButton from './subcomponents/ProjectLinkButton.jsx'
-import { getInitialFeaturedIndex, wrapIndex, getDirection } from './subcomponents/utilities.jsx'
+import ProjectCard from './subComponents/ProjectCard.jsx'
+import ProjectLinkButton from './subComponents/ProjectLinkButton.jsx'
+import { getInitialFeaturedIndex, wrapIndex, getDirection } from './subComponents/utilities.jsx'
 import {
   sectionClass,
   headingClass,

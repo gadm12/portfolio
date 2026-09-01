@@ -1,7 +1,7 @@
 /*
  * Component-scoped CSS for ProjectsSection, relocated from the global
  * src/index.css since these rules are used exclusively by
- * subcomponents/ProjectCard.jsx (verified: no other component references
+ * subComponents/ProjectCard.jsx (verified: no other component references
  * them). Imported directly by ProjectCard.jsx.
  *
  * (.reticle / .animate-hero-rise remain global in src/index.css because
