@@ -1,9 +1,10 @@
 /*
  * SkillsSection has no bespoke CSS today — every static visual style is a
- * Tailwind utility class, extracted into ./tailwindStyles.jsx. Per-tile
- * sizing/transitions are computed at runtime (grid layout math in
- * subComponents/utilities.jsx) and applied as inline styles in
- * SkillTile.jsx, since Tailwind classes can't express runtime-computed
+ * Tailwind utility class, extracted into ./tailwindStyles.jsx. The one
+ * thing that can't be a class is per-tile sizing: each tile's pixel size
+ * comes from the skill's `level` (see getBaseSize in
+ * subComponents/utilities.jsx) and is applied as an inline style in
+ * SkillTile.jsx, since Tailwind classes can't express arbitrary computed
  * values.
  *
  * This file is imported by SkillsSection.jsx and reserved for any future

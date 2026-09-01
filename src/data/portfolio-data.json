@@ -15,223 +15,223 @@
   "skills": [
     {
       "name": "Python",
-      "category": "Languages",
+      "section": "backend",
       "icon": "python",
       "level": "primary"
     },
     {
       "name": "Django",
-      "category": "Backend",
+      "section": "backend",
       "icon": "django",
       "level": "primary"
     },
     {
       "name": "Django REST Framework",
-      "category": "Backend",
+      "section": "backend",
       "icon": "drf",
       "level": "primary"
     },
     {
       "name": "Pytest",
-      "category": "Testing",
+      "section": "tools",
       "icon": "pytest",
       "level": "primary"
     },
 
     {
       "name": "PostgreSQL",
-      "category": "Databases",
+      "section": "backend",
       "icon": "postgresql",
       "level": "primary"
     },
     {
       "name": "Redis",
-      "category": "Databases",
+      "section": "backend",
       "icon": "redis",
       "level": "supporting"
     },
     {
       "name": "Pandas",
-      "category": "Data Analysis",
+      "section": "tools",
       "icon": "pandas",
       "level": "supporting"
     },
     {
       "name": "NumPy",
-      "category": "Data Analysis",
+      "section": "tools",
       "icon": "numpy",
       "level": "supporting"
     },
     {
       "name": "Supabase",
-      "category": "BaaS",
+      "section": "backend",
       "icon": "supabase",
       "level": "supporting"
     },
     {
       "name": "JavaScript",
-      "category": "Languages",
+      "section": "frontend",
       "icon": "javascript",
       "level": "primary"
     },
     {
       "name": "React",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "react",
       "level": "primary"
     },
     {
       "name": "Cypress",
-      "category": "Testing",
+      "section": "tools",
       "icon": "cypress",
       "level": "primary"
     },
     {
       "name": "Vite",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "vite",
       "level": "secondary"
     },
     {
       "name": "React Router",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "reactrouter",
       "level": "secondary"
     },
     {
       "name": "Tailwind CSS",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "tailwind",
       "level": "secondary"
     },
     {
       "name": "Jest",
-      "category": "Testing",
+      "section": "tools",
       "icon": "jest",
       "level": "supporting"
     },
     {
       "name": "Bootstrap",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "bootstrap",
       "level": "supporting"
     },
     {
       "name": "HTML",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "html",
       "level": "supporting"
     },
     {
       "name": "CSS",
-      "category": "Frontend",
+      "section": "frontend",
       "icon": "css",
       "level": "supporting"
     },
 
     {
       "name": "Docker",
-      "category": "DevOps",
+      "section": "devops",
       "icon": "docker",
       "level": "primary"
     },
     {
       "name": "GitHub Actions",
-      "category": "DevOps",
+      "section": "devops",
       "icon": "githubactions",
       "level": "primary"
     },
     {
       "name": "AWS",
-      "category": "DevOps",
+      "section": "devops",
       "icon": "aws",
       "level": "secondary"
     },
     {
       "name": "Nginx",
-      "category": "DevOps",
+      "section": "devops",
       "icon": "nginx",
       "level": "secondary"
     },
     {
       "name": "Linux",
-      "category": "DevOps",
+      "section": "devops",
       "icon": "linux",
       "level": "secondary"
     },
 
     {
       "name": "Git",
-      "category": "Tools",
+      "section": "tools",
       "icon": "git",
       "level": "secondary"
     },
     {
       "name": "GitHub",
-      "category": "Tools",
+      "section": "tools",
       "icon": "github",
       "level": "secondary"
     },
     {
       "name": "Axios",
-      "category": "Tools",
+      "section": "frontend",
       "icon": "axios",
       "level": "secondary"
     },
     {
       "name": "Postman",
-      "category": "Tools",
+      "section": "tools",
       "icon": "postman",
       "level": "secondary"
     },
     {
       "name": "Stripe",
-      "category": "Tools",
+      "section": "tools",
       "icon": "stripe",
       "level": "supporting"
     },
 
     {
       "name": "Claude Code",
-      "category": "AI",
+      "section": "tools",
       "icon": "claudecode",
       "level": "supporting"
     },
     {
       "name": "Gemini",
-      "category": "AI",
+      "section": "tools",
       "icon": "gemini",
       "level": "supporting"
     },
     {
       "name": "PyTorch",
-      "category": "AI",
+      "section": "tools",
       "icon": "pytorch",
       "level": "supporting"
     },
     {
       "name": "Scikit-learn",
-      "category": "AI",
+      "section": "tools",
       "icon": "scikitlearn",
       "level": "supporting"
     },
 
     {
       "name": "Vercel",
-      "category": "PaaS",
+      "section": "devops",
       "icon": "vercel",
       "level": "supporting"
     },
     {
       "name": "GitHub Pages",
-      "category": "PaaS",
+      "section": "devops",
       "icon": "githubpages",
       "level": "supporting"
     },
 
     {
       "name": "Figma",
-      "category": "Software",
+      "section": "tools",
       "icon": "figma",
       "level": "supporting"
     }
