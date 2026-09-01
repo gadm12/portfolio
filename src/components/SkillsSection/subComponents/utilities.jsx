@@ -34,8 +34,33 @@ export const SECTIONS = [
  *  SECTIONS key — "Tools & Practices" is the catch-all bucket. */
 export const DEFAULT_SECTION = 'tools'
 
+/**
+ * The three tiers, in the order they stack as rows inside a section (top to
+ * bottom, largest to smallest). Every key here must exist in LEVEL_SCALE.
+ */
+export const LEVELS = ['primary', 'secondary', 'supporting']
+
+/** Where a skill lands when its `level` is missing or doesn't match a tier. */
+export const DEFAULT_LEVEL = 'secondary'
+
+/**
+ * A skill's tier, normalised to a key that definitely exists in LEVEL_SCALE.
+ *
+ * Both the row a skill renders in and the size it renders at go through
+ * this, deliberately: `level` is structural now, not just cosmetic, so a
+ * typo like "primry" must not be able to put a skill in a fourth phantom
+ * row while still sizing it as secondary. One accessor means grouping and
+ * sizing can never disagree.
+ *
+ * @param {{level?: string}} skill
+ * @returns {string} one of LEVELS
+ */
+export function getLevel(skill) {
+  return Object.hasOwn(LEVEL_SCALE, skill.level) ? skill.level : DEFAULT_LEVEL
+}
+
 function levelWeight(skill) {
-  return LEVEL_SCALE[skill.level] ?? LEVEL_SCALE.secondary
+  return LEVEL_SCALE[getLevel(skill)]
 }
 
 /**
@@ -55,7 +80,7 @@ export function getBaseSize(skill) {
  * Buckets the flat `skills` array into the four fixed sections, preserving
  * each skill's order from portfolio-data.json within its bucket.
  *
- * A skill whose `section` is missing or unrecognised is routed to
+ * A skill whose `section` is missing or unrecognized is routed to
  * DEFAULT_SECTION rather than dropped — same defensive spirit as
  * levelWeight()'s fallback above, so a typo in the JSON shows up as a tile
  * in the wrong group (obvious) instead of a tile that silently vanishes
@@ -74,4 +99,23 @@ export function groupSkillsBySection(skills) {
   }
 
   return grouped
+}
+
+/**
+ * Splits one section's skills into rows by tier, in LEVELS order, so each
+ * row holds exactly one level and every tile in it is therefore the same
+ * size.
+ *
+ * Tiers with no skills are dropped rather than rendered empty, so a section
+ * holding only primary and supporting skills renders two rows with no gap
+ * where the secondary row would have been.
+ *
+ * @param {Array<{level?: string}>} skills - one section's skills
+ * @returns {Array<{level: string, skills: Array}>} non-empty rows, largest first
+ */
+export function groupSkillsByLevel(skills) {
+  return LEVELS.map((level) => ({
+    level,
+    skills: skills.filter((skill) => getLevel(skill) === level),
+  })).filter((row) => row.skills.length > 0)
 }
