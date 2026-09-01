@@ -11,7 +11,7 @@ I'm a U.S. Army veteran (11 years of service) transitioning into software develo
 ## Features
 
 - **Data-driven sections** — About, Skills, Projects, Contact, Experience, and Education all render entirely from `src/data/portfolio-data.json`.
-- **Filterable skills grid** — filter by category; remaining tiles grow to fill the available space instead of leaving dead space or shrinking the grid.
+- **Sectioned skills grid** — skills are grouped into four fixed sections (Backend, Frontend, DevOps, Tools & Practices), each with its own tile grid. Each tile's size comes from that skill's `level`, so the same tier reads at the same size in every section.
 - **Project carousel** — a featured project card with prev/next navigation, a directional slide animation, and a scrollable description/stack block, plus a full list of every project below it.
 - **Responsive nav** — a horizontal link row on medium screens and up, collapsing to a hamburger-triggered dropdown on smaller screens (including mobile).
 - **Scroll-spy navigation** — the nav link for whichever section is currently centered in the viewport highlights automatically, and the URL hash silently stays in sync as you scroll (basename-aware, so it plays nicely with the GitHub Pages subpath).
@@ -74,8 +74,9 @@ Both are resolved once by the route loader (`loadPortfolioData` in `src/utilitie
   "skills": [
     {
       "name": "Python",
-      "category": "Languages",
-      "icon": "python"
+      "section": "backend",
+      "icon": "python",
+      "level": "primary"
     }
   ],
   "experience": [
@@ -108,7 +109,7 @@ A few notes:
 
 - Any field left as an empty string (`""`) is simply skipped by the UI — e.g. leave `imageUrl` blank on a project and a placeholder number shows instead of a broken image; leave `repoUrl`/`liveUrl` blank and that link renders disabled instead of clickable.
 - `about.photoUrl` is present in the schema but **not actually used** — the photo shown in the About section always comes from `src/assets/headshot.png` (see `src/components/AboutSection/README.md` for the full explanation). Replace that file to change the photo.
-- `skills`, `experience`, `education`, and `projects` are all arrays — add or remove entries freely; the sections render however many items you provide. Each skill's `icon` key must match an entry in `src/components/SkillsSection/subComponents/skillcons.jsx` — see `src/components/SkillsSection/EditSkill.md` for a full walkthrough of adding a new skill/icon.
+- `skills`, `experience`, `education`, and `projects` are all arrays — add or remove entries freely; the sections render however many items you provide. Each skill's `icon` key must match an entry in `src/components/SkillsSection/subComponents/skillcons.jsx`, its `section` must be one of `backend`/`frontend`/`devops`/`tools` (anything else falls back to `tools`), and its `level` — `primary`, `secondary`, or `supporting` — sets the tile size. See `src/components/SkillsSection/EditSkill.md` for a full walkthrough of adding a new skill/icon.
 - `featured: true` on at most one project picks which one the Projects carousel shows first on load; it doesn't hide or filter anything — every project still appears in the list below regardless.
 
 ## How data flows
