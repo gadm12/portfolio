@@ -11,7 +11,7 @@ I'm a U.S. Army veteran (11 years of service) transitioning into software develo
 ## Features
 
 - **Data-driven sections** — About, Skills, Projects, Contact, Experience, and Education all render entirely from `src/data/portfolio-data.json`.
-- **Sectioned skills grid** — skills are grouped into four fixed sections (Backend, Frontend, DevOps, Tools & Practices), each with its own tile grid. Each tile's size comes from that skill's `level`, so the same tier reads at the same size in every section.
+- **Sectioned skills grid** — skills are grouped into four fixed sections (Backend, Frontend, DevOps, Tools & Practices). Within each section they stack into one left-aligned row per tier — primary, secondary, supporting — sized from that skill's `level`, so the same tier reads at the same size in every section. Tiers a section doesn't use are skipped rather than left as gaps.
 - **Project carousel** — a featured project card with prev/next navigation, a directional slide animation, and a scrollable description/stack block, plus a full list of every project below it.
 - **Responsive nav** — a horizontal link row on medium screens and up, collapsing to a hamburger-triggered dropdown on smaller screens (including mobile).
 - **Scroll-spy navigation** — the nav link for whichever section is currently centered in the viewport highlights automatically, and the URL hash silently stays in sync as you scroll (basename-aware, so it plays nicely with the GitHub Pages subpath).
