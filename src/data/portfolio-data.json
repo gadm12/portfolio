@@ -311,6 +311,49 @@
   ],
   "projects": [
     {
+      "title": "TripSync - React & Django",
+
+      "description": "A full-stack group travel planning application built collaboratively with a six-person team. TripSync allows users to create accounts, create trips, join groups, save activities, and coordinate travel plans. The project uses a React frontend connected to Django REST Framework, PostgreSQL for persistence, Google Maps APIs for location features, Cypress for end-to-end testing, Docker for containerization, and AWS EC2 with Nginx, Gunicorn, and CI/CD for deployment.",
+
+      "stack": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "React",
+        "JavaScript",
+        "Vite",
+        "React Router DOM",
+        "Axios",
+        "PostgreSQL",
+        "Psycopg3",
+        "Redis",
+        "Docker",
+        "Docker Compose",
+        "Nginx",
+        "Gunicorn",
+        "Tailwind CSS",
+        "Simple JWT",
+        "Google Maps API",
+        "Google Places API",
+        "Cypress",
+        "Django TestCase",
+        "GitHub Actions",
+        "AWS EC2",
+        "Git",
+        "GitHub"
+      ],
+
+      "repoUrl": "https://github.com/BoximusMaximus/TripSync",
+
+      "liveUrl": "https://tripsync.duckdns.org",
+
+      "imageUrl": "project-demos/tripsync-demo.gif",
+
+      "videoUrl": "",
+
+      "featured": true
+    },
+    {
       "title": "School Manager API  - React & Django",
       "description": "A full-stack school management application built for staff to manage student data, browse subjects, and access book information through the Google Books API. Features token authentication, PostgreSQL persistence, Redis caching, API throttling, and a React frontend connected to Django REST Framework.",
       "stack": [
@@ -335,7 +378,7 @@
       "liveUrl": "",
       "imageUrl": "project-demos/school-api-demo.gif",
       "videoUrl": "",
-      "featured": true
+      "featured": false
     },
     {
       "title": "E-Commerce API - Django",
@@ -433,6 +476,7 @@
       "imageUrl": "",
       "featured": false
     },
+
     {
       "title": "Personal Project",
       "description": "The Personal Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's.",
@@ -461,44 +505,6 @@
         "Claude Code",
         "drawSQL",
         "Nginx"
-      ],
-      "repoUrl": "",
-      "liveUrl": "",
-      "imageUrl": "",
-      "featured": false
-    },
-
-    {
-      "title": "Group Project",
-      "description": "The Group Project is a Full-Stack application with Authentication, CRUD, and 3rd party API's built through collaboration with a 5-10 person team that I participated in.",
-      "stack": [
-        "Python",
-        "Django",
-        "Django REST Framework",
-        "Django CORS Headers",
-        "Psycopg3",
-        "PostgreSQL",
-        "Pytest",
-        "Docker Compose",
-        "Gunicorn",
-        "Redis",
-        "DRF Token Authentication",
-        "Django Test Case",
-        "Vite",
-        "React",
-        "JavaScript",
-        "CSS",
-        "Tailwind",
-        "React-Router-DOM",
-        "Axios",
-        "Cypress",
-        "TLDraw",
-        "Claude Code",
-        "drawSQL",
-        "Nginx",
-        "CI/CD",
-        "Github",
-        "Git"
       ],
       "repoUrl": "",
       "liveUrl": "",
